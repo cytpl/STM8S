@@ -15,5 +15,7 @@ void TIMER4_Init(void)//1ms timer interrupt ayarı
 __interrupt void Timer4_ISR(void)
 {
   TIM4_SR_UIF = 0;
+  //TIMcallback fonk. fonksiyon pointer 
+  //interrupt içine eşitlendiği fonksiyonun çağrılmasını sağlar.
   TIMcallback();
 }

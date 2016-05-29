@@ -25,3 +25,4 @@ void Clock_Init(void)
    while(!CLK_ICKR_HSIRDY);
    CLK_CKDIVR = 0x00;
 }
+

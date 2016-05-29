@@ -2,7 +2,7 @@
 
 void Initalize(void)
 {
-  #if (SPIInit)
+  #if (SPIInit)//Macros.h #define SPIInit 1 tanımlaması varsa SPI_Init fonk. çağrılır 0 ise çağrılmaz
     SPI_Init();
   #endif
     

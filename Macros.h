@@ -1,6 +1,8 @@
 #ifndef __MACROS_H
 #define __MACROS_H
 
+/*çağırılacak fonksiyonlar define 1 olarak tanımlanır çağırılmayacak 0 */
+
 #define GPIOInit   1
 //#define GPIOInit   0
 

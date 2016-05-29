@@ -4,11 +4,12 @@ long Led;
 unsigned char buffer[255];
 short id;
 
+//timer interrupt fonksiyonu
 void TIMfunc(void)
 {
-  Led++;
+  Led++;//1ms de bir Led 1 artar 
 }
-
+//Usart interrupt fonksiyonu
 void USARTFunc(void)
 {
   buffer[id] = UART1_DR;
@@ -16,7 +17,7 @@ void USARTFunc(void)
    if(id>255)
      id=0;
 }
-
+//Led blink fonksiyonu
 void LED(void)
 {
    if(Led>100)

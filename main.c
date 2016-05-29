@@ -4,11 +4,11 @@
 int main( void )
 {  
    // InitClock();
-    Initalize();
-    TIMcallback=&TIMfunc;
-    Usartcallback=&USARTFunc;
+    Initalize();//Tüm init fonk. çağıran fonk.
+    TIMcallback=&TIMfunc;// Timer interruptında çalışacak fonksiyon adresi yüklemesi
+    Usartcallback=&USARTFunc;// Usart interruptında çalışacak fonksiyon adresi yüklemesi
 
-    __enable_interrupt();
+    __enable_interrupt();//interrupt ları aç
     while (1)
     {
      	LED();          

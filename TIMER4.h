@@ -4,7 +4,8 @@
 #include <iostm8s003f3.h>
 
 void TIMER4_Init(void);
-
+/*fonksiyon pointer fonksiyon adresi tutar interrupt larda 
+fonksiyon çağırılıp değer döndürmek için kullanıldı*/
 static void(*TIMcallback)(void);
 
 #endif

@@ -3,7 +3,7 @@
 
 int main( void )
 {  
-   // InitClock();
+    InitClock();
     Initalize();//Tüm init fonk. çağıran fonk.
     TIMcallback=&TIMfunc;// Timer interruptında çalışacak fonksiyon adresi yüklemesi
     Usartcallback=&USARTFunc;// Usart interruptında çalışacak fonksiyon adresi yüklemesi

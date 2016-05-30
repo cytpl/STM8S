@@ -1,5 +1,6 @@
 #include "USART.h"
 
+void(*Usartcallback)(void);
 //Usart initalize fonk.
 void UART_Init(void)
 {
@@ -16,7 +17,7 @@ void SendByte(char i)
   UART1_DR = i;
 }
  //String gönderme fonksiyonu
-void SendString(const char *s)
+void SendString(char *s)
 {
    while(*s)
       SendByte(*s++);

@@ -3,7 +3,7 @@
 
 #include <iostm8s003f3.h>
 
-static void(*Usartcallback)(void);
+extern void(*Usartcallback)(void);
 void UART_Init(void);
 void SendByte(char i);
 void SendString(const char *s);

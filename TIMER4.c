@@ -1,6 +1,7 @@
 #include "TIMER4.h"
+#include "Tasks.h"
 
-long a;
+void(*TIMcallback)(void);
 
 void TIMER4_Init(void)//1ms timer interrupt ayarı
 {

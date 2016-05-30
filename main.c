@@ -11,7 +11,9 @@ int main( void )
     __enable_interrupt();//interrupt ları aç
     while (1)
     {
-     	LED();          
+     	LED();   
+     	SPITask();
+      UsartTask();
     }
 }
 
